@@ -1,7 +1,7 @@
 // ============================================================================
 // PORTFOLYO VERİ DOSYASI (Buradan projelerini, yetkinliklerini ve linklerini kolayca düzenleyebilirsin)
-// Kendi görsellerini veya videolarını `public/projects/` klasörüne atıp
-// image: "/projects/dosya-adi.png" şeklinde güncelleyebilirsin.
+// Kendi görsellerini veya videolarını `public/` klasörüne atıp
+// image: "./dosya-adi.png" veya images: ["./gorsel1.png", "./gorsel2.png"] şeklinde güncelleyebilirsin.
 // ============================================================================
 
 export const personalInfo = {
@@ -125,10 +125,10 @@ export const skills = [
 ];
 
 export const projectCategories = [
-  { id: "all", label: "Tümü" },
-  { id: "motion", label: "Motion Graphics" },
-  { id: "illustration", label: "2B & İzometrik İllüstrasyon" },
-  { id: "ui-branding", label: "UI & Marka Kimliği" }
+  { id: "all", label: "TÜMÜ" },
+  { id: "motion", label: "MOTION GRAPHICS" },
+  { id: "illustration", label: "2B & İZOMETRİK İLLÜSTRASYON" },
+  { id: "ui-branding", label: "UI & MARKA KİMLİĞİ" }
 ];
 
 export const projects = [
@@ -136,7 +136,7 @@ export const projects = [
     id: "qaf-coffee-branding",
     title: "Qaf Coffee — Marka Kimliği, Logo ve Ambalaj Tasarımı",
     category: "ui-branding",
-    categoryLabel: "UI & Marka Kimliği",
+    categoryLabel: "UI & MARKA KİMLİĞİ",
     format: "Kurumsal Kimlik & Ambalaj (Mockup)",
     year: "2026",
     client: "Qaf Coffee",
@@ -147,23 +147,23 @@ export const projects = [
       "Siyah ve alternatif zemin kullanımlarına tam uyumlu kurumsal renk paleti",
       "Raf ve paket (mockup) uygulamalarıyla tamamlanan bütüncül marka kimliği"
     ],
-    tools: ["Adobe Illustrator", "Photoshop"],
+    tools: ["ADOBE ILLUSTRATOR", "PHOTOSHOP"],
     gradient: "from-amber-600/40 via-stone-900/70 to-slate-950",
     accentColor: "#f59e0b",
     previewType: "brand-identity",
     featured: true,
+    image: "./qaf_mckp.png",
     images: [
-  "/qaf_siyah.png",
-  "/qaf_alt.png",
-  "/qaf_mckp.png"
-]
-
+      "./qaf_mckp.png",
+      "./qaf_siyah.png",
+      "./qaf_alt.png"
+    ]
   },
   {
     id: "ieu-esports-reels",
     title: "İEÜ Espor Kulübü — Neon Reels Tanıtım Videosu",
     category: "motion",
-    categoryLabel: "Motion Graphics",
+    categoryLabel: "MOTION GRAPHICS",
     format: "9:16 Dikey Video (Reels)",
     year: "2026",
     client: "İzmir Ekonomi Üniversitesi Espor Kulübü",
@@ -174,115 +174,10 @@ export const projects = [
       "Premiere Pro ile ses tasarımına (SFX) senkronize ritmik kurgu",
       "Kulüp renkleriyle uyumlu mor ve siber-lacivert görsel atmosfer"
     ],
-    tools: ["After Effects", "Premiere Pro", "Illustrator"],
+    tools: ["AFTER EFFECTS", "PREMIERE PRO", "ILLUSTRATOR"],
     gradient: "from-purple-600/40 via-indigo-900/60 to-slate-950",
     accentColor: "#a855f7",
     previewType: "motion-esports",
     featured: true
-  },
-  {
-    id: "isometric-cyber-studio",
-    title: "Neo-İzmir: İzometrik Vektör Serisi",
-    category: "illustration",
-    categoryLabel: "2B & İzometrik İllüstrasyon",
-    format: "Vektörel İllüstrasyon Serisi",
-    year: "2025",
-    client: "Bağımsız Tasarım Serisi",
-    description:
-      "Gece atmosferinde neon mor ve lacivert ışıklandırmalarla kurgulanan, mimari detayları ve özel karakterleri bir araya getiren izometrik 2B vektörel şehir ve stüdyo serisi.",
-    highlights: [
-      "30° izometrik ızgara sistemi üzerinde %100 ölçeklenebilir vektörel mimari",
-      "Özel neon ışık kırılmaları ve katmanlı renk geçişleri",
-      "Hem dijital ekran hem yüksek çözünürlüklü baskıya uygun kurgu"
-    ],
-    tools: ["Adobe Illustrator", "Affinity Designer (iPad)"],
-    gradient: "from-indigo-600/40 via-purple-900/50 to-slate-950",
-    accentColor: "#6366f1",
-    previewType: "isometric-city",
-    featured: true
-  },
-  {
-    id: "thematic-character-pack",
-    title: "Mitolojik & Siber Semboller — Karakter Koleksiyonu",
-    category: "illustration",
-    categoryLabel: "2B & İzometrik İllüstrasyon",
-    format: "Karakter & Sembol Tasarımı",
-    year: "2024 – 2026",
-    client: "Bağımsız Tasarım Çalışmaları",
-    description:
-      "Marka kimlikleri ve dijital koleksiyonlar için geliştirilen, keskin geometrik hatları modern illüstrasyon diliyle buluşturan özel karakter ve ikonografi serisi.",
-    highlights: [
-      "Affinity Designer (iPad) ile konsept eskizden temiz vektöre üretim akışı",
-      "Tutarlı çizgi kalınlığı ve modüler renk paleti sistemi",
-      "Tekstil, çıkartma (sticker) ve dijital rozet kullanımına hazır paket"
-    ],
-    tools: ["Affinity Designer", "Adobe Illustrator", "Photoshop"],
-    gradient: "from-fuchsia-600/35 via-purple-950/60 to-slate-950",
-    accentColor: "#d946ef",
-    previewType: "vector-character",
-    featured: false
-  },
-  {
-    id: "pulse-ui-design-system",
-    title: "Pulse Play — Espor & Topluluk UI Tasarımı",
-    category: "ui-branding",
-    categoryLabel: "UI & Marka Kimliği",
-    format: "Mobil & Web UI Prototipi",
-    year: "2026",
-    client: "Konsept / UI Projesi",
-    description:
-      "Turnuva takibi, takım profilleri ve canlı yayın akışları için karanlık mod (dark mode) odaklı, yüksek kontrastlı kullanıcı arayüzü ve etkileşimli Figma prototipi.",
-    highlights: [
-      "Yeniden kullanılabilir Figma bileşen kütüphanesi (Auto Layout & Variants)",
-      "Karanlık temada okunabilirliği artıran neon vurgu hiyerarşisi",
-      "Mikro etkileşimler ve akıcı ekran geçiş prototipleri"
-    ],
-    tools: ["Figma", "Adobe Illustrator"],
-    gradient: "from-blue-600/40 via-indigo-950/60 to-slate-950",
-    accentColor: "#3b82f6",
-    previewType: "ui-dashboard",
-    featured: true
-  },
-  {
-    id: "nova-brand-identity",
-    title: "Nova Creative — Marka Kimliği & Görsel Dil",
-    category: "ui-branding",
-    categoryLabel: "UI & Marka Kimliği",
-    format: "Kurumsal Kimlik & Logo",
-    year: "2025",
-    client: "Bağımsız Marka Projesi",
-    description:
-      "Yenilikçi dijital girişimler için hazırlanan dinamik logo sistemi, tipografik hiyerarşi, sosyal medya şablonları ve kurumsal görsel kimlik rehberi.",
-    highlights: [
-      "Farklı zemin ve boyutlara uyum sağlayan esnek (responsive) amblem",
-      "Kapsamlı renk paleti, tipografi ve sosyal medya kit tasarımı",
-      "Sunum ve ambalaj mockup uygulamaları"
-    ],
-    tools: ["Adobe Illustrator", "Photoshop", "Figma"],
-    gradient: "from-violet-600/40 via-slate-900/70 to-slate-950",
-    accentColor: "#8b5cf6",
-    previewType: "brand-identity",
-    featured: false
-  },
-  {
-    id: "kinetic-type-reel",
-    title: "Kinetik Tipografi & Logo Animasyon Paketi",
-    category: "motion",
-    categoryLabel: "Motion Graphics",
-    format: "Motion Reel (16:9 & 9:16)",
-    year: "2025",
-    client: "Dijital Medya & Sosyal Medya",
-    description:
-      "Marka logolarına ve kampanya sloganlarına hız, ritim ve karakter kazandıran özel hız eğrili (graph editor) kinetik tipografi ve logo reveal animasyonları.",
-    highlights: [
-      "Vektör katmanlarının Illustrator'dan After Effects'e kayıpsız aktarımı",
-      "Özel hız grafikleri (Ease & Wizz / Graph Editor) ile akıcı hareket",
-      "Sosyal medya ve yayın formatlarına uygun çoklu çıktı"
-    ],
-    tools: ["After Effects", "Illustrator", "Premiere Pro"],
-    gradient: "from-cyan-500/30 via-blue-950/60 to-slate-950",
-    accentColor: "#06b6d4",
-    previewType: "kinetic-motion",
-    featured: false
   }
 ];
